@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>valiadateclass</title>
+</head>
+<body>
+<script>
+    let regexp = /^[C,A,P][0-9]{4}[G-M]$/;
+    function checkclass() {
+        let a =prompt("nhap ten lop can kiem tra");
+        if(regexp.test(a)==true){
+            return true;
+        } return false;
+    }
+    if (checkclass()==true){
+        document.write("Ten hop le");
+
+    } else {
+        document.write("Ten k hop le");
+    }
+</script>
+</body>
+</html>
